@@ -1,0 +1,195 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ddd;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+  padding: 1rem 0;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  animation: apear 2s linear;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  animation: logo-spin 8s linear infinite;
+  opacity: 0.5;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 3px #000);
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #fff);
+  height: 7em;
+  transition: height 800ms;
+}
+
+.logo-scale {
+  animation: scale-img 1s linear;
+}
+
+/* .price-up {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0d0;
+}
+
+.price-down {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d00;
+} */
+.text-price {
+  animation: apear 1s linear;
+  background-color: #333;
+  padding: 0.5em 1em;
+  border-radius: 7px;
+  border: 3px solid #ddd;
+  box-shadow: 0 0 30px #ddd;
+  animation: rise 3s linear infinite 2s;
+  text-shadow: 0 0 0.2em black;
+}
+
+.text-price:hover {
+  animation: none;
+  background-color: #444;
+  transition: background-color 500ms;
+}
+
+span {
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 2rem;
+  color: #0d0;
+  animation: light 1s linear infinite;
+  cursor: none;
+}
+
+span:hover {
+  animation: none;
+  color: rgb(0, 255, 0);
+  transition: color 500ms;
+  text-shadow: 0 0 0.1em #ddd;
+  font-size: 1em;
+  transition: font-size 500ms;
+}
+
+.arrow {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #0d0;
+}
+
+@keyframes apear {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes light {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rise {
+  0% {
+    box-shadow: 0 0 50px;
+  }
+
+  40% {
+    box-shadow: 0 0 15px;
+  }
+
+  70% {
+    box-shadow: 0 0 15px;
+  }
+
+  100% {
+    box-shadow: 0 0 50px;
+  }
+}
+
+@keyframes scale-img {
+  from {
+    transform: scale(0.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
