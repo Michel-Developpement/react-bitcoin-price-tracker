@@ -1,7 +1,7 @@
 # English :
 
 This is my fist app react coding in full typescript.
-This application was make with Vite.
+This application was made with Vite.
 The application is made of 3 components (App.tsx Bitcoin.tsx and NavBar.tsx).
 The Bitcoin component fetches the coindesk API every second to retrieve the price of a bitcoin euro in euros and puts it in a state to be displayed in real time.
 The NavBar component contains only TSX tags and uses a css module for display
@@ -14,7 +14,7 @@ By Antonin MICHEL
 
 # Français :
 
-Ceci est ma première app react faite competement en typescript.
+Ceci est ma première app react faite entièrement en typescript.
 Cette application à été faite avec Vite.
 L'application est faite de 3 composents (App.tsx Bitcoin.tsx et NavBar.tsx).
 Le composent Bitcoin fait un fetch à l'API de coindesk toutes les secondes pour récupérer le prix d'un bitcoin euro en euros et le met dans un state pour être affiché en temps réel.
