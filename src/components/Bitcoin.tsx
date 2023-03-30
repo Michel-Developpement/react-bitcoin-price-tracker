@@ -11,13 +11,12 @@ export default function Bitcoin() {
         .then((res) => res.json())
         .then((data) => {
           setBitcoin(data.bpi.EUR.rate_float);
-          // // bitcoin as number;
-          // setOldBitcoin(bitcoin);
-          // // oldBitcoin as number;
           // bitcoin >= oldBitcoin ? setGap(true) : setGap(false);
+          // setOldBitcoin(bitcoin) as unknown as number;
+          // oldBitcoin as number;
         });
     }, 1000);
-  }, [bitcoin, setBitcoin]);
+  }, []);
   return (
     <div>
       <h2 className="text-price">

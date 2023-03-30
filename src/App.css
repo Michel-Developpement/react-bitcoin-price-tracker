@@ -76,6 +76,7 @@
   font-weight: 700;
   color: #d00;
 } */
+
 .text-price {
   animation: apear 1s linear;
   background-color: #333;
@@ -144,19 +145,19 @@ span:hover {
 
 @keyframes light {
   0% {
-    opacity: 0;
+    color: #0b0;
   }
 
   40% {
-    opacity: 1;
+    color: #0f0;
   }
 
   80% {
-    opacity: 1;
+    color: #0f0;
   }
 
   100% {
-    opacity: 0;
+    color: #0b0;
   }
 }
 
